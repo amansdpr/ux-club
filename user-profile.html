@@ -35,7 +35,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<body class="inner-page"><!-- .inner-page class is for white/grey background navigation -->
+<body class="inner-page user-profile-page"><!-- .inner-page class is for white/grey background navigation -->
     <div class="overlayed"></div>
 
     <!-- header area start -->
@@ -184,7 +184,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box info-two">
-                        <i class="fa fa-user"></i>
+                        <span class="icon-user"></span>
                         <div>
                             <h3>02</h3>
                             <p>Course Enrolled</p>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box info-three">
-                        <i class="fa fa-heart"></i>
+                        <span class="icon-heart"></span>
                         <div>
                             <h3>06</h3>
                             <p>In Wishlist</p>
@@ -202,7 +202,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box info-four">
-                        <i class="fa fa-bell"></i>
+                        <span class="icon-bell"></span>
                         <div>
                             <h3>01</h3>
                             <p>Messages</p>
@@ -211,25 +211,73 @@
                 </div>
             </div>
 
-            <div class="row">                
-                <!-- Sidebar -->
-                <div class="col-lg-3 col-md-5">
-                    <div class="user-side-menu">
-                        <a href="" class="active"><i class="fa fa-tachometer"></i> Dashboard</a>
-                        <a href=""><i class="fa fa-play-circle"></i> My Course</a>
-                        <a href=""><i class="fa fa-comment"></i> Message</a>
-                        <a href=""><i class="fa fa-info-circle"></i> Purchase info</a>
-                        <a href=""><i class="fa fa-gear"></i> Settings</a>
+            <div class="row">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills user-side-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="icon-sidebar_dashboard"></span> Dashboard</a>
+                        <a class="" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="icon-sidebar_mycourse"></span>  My Course</a>
+                        <a class="" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="icon-sidebar_message"></span>  Message</a>
+                        <a class="" id="v-pills-info-tab" data-toggle="pill" href="#v-pills-info" role="tab" aria-controls="v-pills-info" aria-selected="false"><span class="icon-sidebar_info"></span>  Purchase info</a>
+                        <a class="" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="icon-sidebar_settings"></span>  Settings</a>
+                        <a href="#" ><span class="icon-sidebar_signout"></span> Sign Out</a>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-7 d-flex align-items-center justify-content-center">
-                    <div class="user-content">
-                        <div><img src="assets/images/video-icon.png" alt=""></div>
-                        <h3>No Course available</h3>
-                        <a href="#" class="btn btn-dark-grey">Find Course</a>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="user-content">
+                                <div>
+                                    <div><img src="assets/images/video-icon.png" alt=""></div>
+                                    <h3>No Course available</h3>
+                                    <a href="#" class="btn btn-dark-grey">Find Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="user-content">
+                                <div>
+                                    <div><img src="assets/images/video-icon.png" alt=""></div>
+                                    <h3>No Course available</h3>
+                                    <a href="#" class="btn btn-dark-grey">Find Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="user-content">
+                                <div>
+                                    <div><img src="assets/images/video-icon.png" alt=""></div>
+                                    <h3>No Course available</h3>
+                                    <a href="#" class="btn btn-dark-grey">Find Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
+                            <div class="user-content">
+                                <div>
+                                    <div><img src="assets/images/video-icon.png" alt=""></div>
+                                    <h3>No Course available</h3>
+                                    <a href="#" class="btn btn-dark-grey">Find Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="user-content">
+                                <div>
+                                    <div><img src="assets/images/video-icon.png" alt=""></div>
+                                    <h3>No Course available</h3>
+                                    <a href="#" class="btn btn-dark-grey">Find Course</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
+            </div>  
 
         </div>
     </section>
