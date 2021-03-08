@@ -3038,3 +3038,27 @@ body.inner-page {
         margin: 50px auto;
     }
 }
+
+
+/* Main Menu */
+@media(max-width: 991px) {
+    .mainmenu {
+        display: none;
+    }
+    .header-left {
+        justify-content: space-between;
+    }
+    .sideicon {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 50%;
+    }
+    .header-buttons {
+        text-align: center;
+        margin-top: -50px;
+    }
+    .navigation__button {
+        position: relative;
+        z-index: 99;
+    }
+}
