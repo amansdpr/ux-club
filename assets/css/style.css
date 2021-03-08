@@ -2993,7 +2993,7 @@ body.inner-page {
 
 .info-one {
     border-radius: 10px 10px 0 0;
-    background-color: #5f5f5f;
+    background-color: #323647;
 }
 .info-two {
     background-color: #dc1c33;
@@ -3069,7 +3069,7 @@ body.inner-page {
     text-align: center;
 }
 .user-content h3 {
-    color: #6c6c6c;
+    color: #777980;
     font-size: 25px;
     margin: 20px 0;
     font-weight: 900;
@@ -3077,6 +3077,11 @@ body.inner-page {
 
 .user-content .btn {
     font-weight: 900;
+    background-color: #777980;
+}
+
+.user-content .btn:hover {
+    background-color: #e30045;
 }
 
 
