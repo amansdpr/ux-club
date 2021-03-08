@@ -2908,3 +2908,133 @@ body.inner-page {
 .call-to-action .site-btn.course {
     margin-top: 0;
 }
+
+/* User Profile */
+.info-box {
+    padding: 20px 20px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 30px;
+}
+
+@media (max-width: 767px){
+    .info-box {
+        margin-bottom: 30px;
+    }
+}
+
+.info-one {
+    border-radius: 10px 0 0 0;
+    background-color: #797979;
+}
+.info-two {
+    background-color: #dc1c33;
+}
+.info-three {
+    background-color: #bc1e47;
+}
+.info-four {
+    background-color: #771c53;
+}
+
+.info-box h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 900;
+}
+.info-box h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
+}
+.info-box p {
+    font-size: 16px;
+    line-height: 30px;
+}
+.info-box a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+.info-box i {
+    font-size: 35px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.user-side-menu {
+    background: #ececec;
+    padding: 40px 0;
+    min-height: 450px;
+    border-bottom-left-radius: 10px;
+}
+.user-side-menu a {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    color: #272727;
+    padding: 10px 10px 10px 20px;
+    border-left: 5px solid #ececec;
+}
+
+.user-side-menu a:hover,
+.user-side-menu a.active {
+    background: #fff;
+    color: #e90047;
+    border-color: #e90047;
+}
+
+.user-side-menu a i {
+    margin-right: 10px;
+    font-size: 24px;
+    width: 24px;
+}
+
+.user-content {
+    padding: 30px;
+    text-align: center;
+}
+.user-content h3 {
+    color: #6c6c6c;
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.user-content .btn {
+    font-weight: 900;
+}
+
+
+
+@media (max-width: 991px){
+    .info-box {
+        margin-bottom: 30px;
+    }
+    .info-one,
+    .user-side-menu {
+        border-radius: 10px;
+    }
+    .user-content {
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 767px){
+    .info-box {
+        margin-bottom: 30px;
+    }
+    .info-one,
+    .user-side-menu {
+        border-radius: 10px;
+    }
+    .user-content {
+        margin: 50px auto;
+    }
+}
