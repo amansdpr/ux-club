@@ -3056,11 +3056,12 @@ body.inner-page {
     border-color: #e90047;
 }
 
-.user-side-menu a span,
-.user-side-menu a i {
+.user-side-menu a span, .user-side-menu a i {
     margin-right: 10px;
     font-size: 24px;
     width: 24px;
+    display: inline-block;
+    transform: translateY(4px);
 }
 
 .user-content {
