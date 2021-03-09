@@ -216,7 +216,8 @@ img {
     transform: rotate(180deg);
 }
 
-.site-button:hover {
+.site-button:hover,
+.scrolled .site-button:hover {
     border-color: transparent;
     background: #E30045;
     color: #fff;
@@ -735,9 +736,9 @@ header.header-area.scrolled {
     box-shadow: 0 1.5px 2px 1.5px #eee;
 }
 
-.inner-page .site-button ,
+.inner-page .site-button, 
 .scrolled .site-button {
-    background: #8b8b8b;
+    background: #777980;
 }
 
 .inner-page .site-button.borderd,
@@ -750,7 +751,6 @@ header.header-area.scrolled {
     background-color: #e30045;
 }
 .inner-page .site-button.borderd:hover,
-.scrolled .site-button:hover,
 .scrolled .site-button.borderd:hover,
 .site-button.borderd:hover {
     background: #9C0333;
@@ -2983,6 +2983,7 @@ body.inner-page {
     align-items: center;
     gap: 10px;
     line-height: 25px;
+    height: 85px;
 }
 
 @media (max-width: 767px){
@@ -2994,7 +2995,6 @@ body.inner-page {
 .info-one {
     border-radius: 10px 10px 0 0;
     background-color: #323647;
-    padding: 18px 20px;
 }
 .info-two {
     background-color: #dc1c33;
@@ -3022,12 +3022,12 @@ body.inner-page {
 }
 .info-box a {
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 23px;
 }
 .info-box i,
 .info-box span {
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 100px;
     overflow: hidden;
     display: inline-block;
