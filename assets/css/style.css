@@ -2798,6 +2798,17 @@ section.login-area {
     top: 0;
 }
 
+.login-area.login-page::after {
+    background-image: url(../images/login-page-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.login-area.login-page .loginforms1.account-details {
+    padding: 110px 0;
+}
+
 .login-form input[type=checkbox] {
     display: none;
 }
