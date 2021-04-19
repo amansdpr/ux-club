@@ -3163,3 +3163,55 @@ body.inner-page {
     padding: 110px 0;
 }
 /* Login page css */
+
+
+
+/* Collapse Sidebar Course in page  */
+section.course-video.course-inner-page .tab-content .single-video-left { padding-left: 60px; }
+.single-video-left.video-title::after { left: 0; }
+
+#collapse-sidebar {
+    transition: 200ms;
+    padding-left: 15px;
+    width: 25%;
+}
+@media(max-width: 767px){
+    #collapse-sidebar {width: 100%; flex-basis: 100%;}
+    #open-sidebar, #hide-sidebar {display: none !important;}
+}
+#collapse-sidebar.active {
+    transform: translateX(-100%);
+    padding-left: 0;
+}
+
+.active .course-page-heading {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+#open-sidebar {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 35px;
+    color: #000;
+    background: #ffc600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 200ms;
+}
+#open-sidebar:hover {
+    background: #fff;
+}
+#open-sidebar.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Collapse Sidebar Course in page  */
