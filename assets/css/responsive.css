@@ -3,14 +3,13 @@
         font-size: 16px;
     }
 
-    .site-btn.course {
+    /*    .site-btn.course {
         font-size: 18px;
         width: 200px;
         height: 50px;
         line-height: 50px;
         margin-top: 20px;
-    }
-
+    }*/
     .course-video.course-inner-page .course-page-heading {
         padding-top: 29px;
         padding-bottom: 29px;
@@ -81,11 +80,6 @@
         margin-top: 20px;
     }
 
-    .call-button {
-        display: block;
-        margin-bottom: 20px;
-    }
-
     .fb-button {
         margin: 0;
     }
@@ -110,106 +104,99 @@
 }
 
 @media (max-width: 767px) {
+    footer .call-button {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    .call-to-action {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .call-to-action .site-btn {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
     .course-video.course-inner-page .container-fluid .row {
-    flex-direction: column-reverse;
-}
+        flex-direction: column-reverse;
+    }
     .course-inner-page .embed-responsive {
         width: 100%;
     }
-
     .navigation__button {
         position: relative;
         z-index: 99;
     }
-
     .mainmenu {
         display: none;
     }
-
     .sideicon {
         display: flex;
         justify-content: flex-end;
         flex-basis: 50%;
     }
-
     .sidebarlists ul li ul a {
         font-size: 14px;
         padding: 5px 0;
         margin: 0px 0;
     }
-
     .sidebarlists ul li a {
         margin: 10px 0;
         font-size: 16px;
     }
-
     .sidebarlists ul li:not(:last-child) {
         border-bottom: 1px solid #ddd;
     }
-
     .sidebarlists ul li ul li:not(:last-child) {
         border-bottom: 1px solid #ddd;
     }
     section.course-video.course-inner-page .tab-content {
-    margin-bottom: 0;
-}
-
+        margin-bottom: 0;
+    }
     .header-left {
         justify-content: center;
     }
-
     .header-buttons {
         text-align: center;
         margin-top: 5px;
     }
-
     .hero-area .title {
         font-size: 36px;
     }
-
     .course-img {
         height: 250px;
     }
-
     .single-post .thumb {
         height: 400px;
     }
-
     .single-post {
         height: 400px;
     }
-
     .mobile-menu {
         display: block;
         flex-basis: 50%;
         background: transparent;
         position: relative;
     }
-
     .site-logo {
         flex-basis: 50%;
     }
-
     .header-left {
         justify-content: flex-start;
     }
-
     .slicknav_menu {
         background: transparent;
     }
-
     .slicknav_btn {
         background: transparent;
     }
-
     .slicknav_menu .slicknav_icon-bar {
         width: 20px;
     }
-
     .slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
         margin-top: 5px;
     }
-
     .slicknav_nav {
         width: 200px;
         right: 16px;
@@ -217,20 +204,16 @@
         background: #fff;
         z-index: 999;
     }
-
     .slicknav_nav .slicknav_row,
     .slicknav_nav a {
         color: #222;
     }
-
     .slicknav_nav a {
         font-weight: 600;
     }
-
     .sub-menu {
         top: 0;
     }
-
     ul.has-sub-menu {
         position: inherit !important;
         display: block;
@@ -244,69 +227,55 @@
         margin-top: 5px;
         transition: 0s;
     }
-
     ul.has-sub-menu a {
         color: #222;
         padding: 2px 5px !important;
         margin: 0;
         font-size: 14px !important;
     }
-
     .slicknav_nav {
         z-index: 9999;
         position: absolute;
     }
-
     .slicknav_nav a:hover {
         background: #E30045 !important;
         color: #fff !important;
     }
-
     ul.slicknav_nav li.has-submenu {
         padding-right: 0;
     }
-
     .slicknav_nav a {
         border-radius: 0 !important;
         margin: 0 !important;
         padding: 5px 15px;
     }
-
     .slicknav_btn {
         cursor: pointer;
     }
-
     .page li.has-submenu::after {
         display: none;
     }
-
     .header-area.page .slicknav_menu .slicknav_icon-bar {
         background: #222;
     }
-
     .tab-content .tab-pane {
         min-height: auto;
     }
-
     .tab-content {
         margin-bottom: 30px;
     }
-
     .user-profile-area {
         padding-bottom: 20px;
     }
-
     a.slicknav_item.slicknav_row {
         padding-left: 15px;
     }
-
     .inner-course {
         height: 300px;
     }
     .header-buttons {
         margin-top: -50px;
     }
-
     .slicknav_btn {
         position: relative;
         z-index: 99;
@@ -315,23 +284,19 @@
         position: relative;
         z-index: 99;
     }
-
     .for-loginmethod.payment-option .modal-dialog {
         width: 600px;
         max-width: 600px;
     }
-
     .payment-option .login-content h4 {
         font-size: 20px;
         margin-bottom: 10px;
     }
-
     .price span {
         font-size: 30px;
         padding: 0px 0;
         margin-bottom: 5px;
     }
-
     .payment-gatway .try-thisfield {
         margin-top: 25px;
     }
@@ -448,13 +413,11 @@
     }
 
     .header-buttons .site-button {
-        font-size: 12px;
-        padding: 5px 15px;
+
     }
 
     .header-buttons {
-        margin-top: -44px;
-        padding-left: 20px;
+
     }
 }
 
@@ -526,10 +489,6 @@
     .newslater-form button {
         padding: 10px 20px;
     }
-    .header-buttons {
-        padding-left: 50px;
-    }
-
     .navigation__icon,
     .navigation__icon::before,
     .navigation__icon::after {
@@ -545,11 +504,12 @@
         top: 7px;
     }
 
-    .call-button span {
-        display: block;
-    }
 }
 @media (max-width: 375px) {
+    #login-modal-form .modal-content {
+        max-width: 90%;
+        margin: auto;
+    }
     .for-loginmethod.payment-option .modal-dialog {
         width: 315px;
         max-width: 315px;
@@ -581,13 +541,6 @@
 
     .single-post {
         height: 350px;
-    }
-
-    .site-btn.course {
-        width: 180px;
-        font-size: 16px;
-        height: 50px;
-        line-height: 50px;
     }
 
     .course-preview-details .title {
@@ -656,20 +609,15 @@
     .releted-course {
         padding-top: 30px;
     }
-
-   .header-buttons .site-button {
-        border: 1px solid;
-        padding: 4px 10px;
-        font-size: 11px;
-    }
-
-    .header-buttons {
-        padding-left: 30px;
-        margin-top: -32px;
-    }
-
     .site-logo img {
         width: 70px;
+    }
+    div .header-buttons {
+        margin-top: -36px;
+        padding-right: 13%;
+    }
+    div .header-buttons .site-button {
+        padding: 5px 15px;
     }
 }
 

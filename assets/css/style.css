@@ -244,6 +244,9 @@ img {
     background-color: #eaeaea;
 }
 
+.site-btn {
+    white-space: nowrap;
+}
 
 .header-area.scrolled {
     background: #fff;
@@ -632,12 +635,13 @@ a:hover .sbmenu-item {
     top: 4px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 768px){
     .footer-right {
         text-align: right;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        gap: 30px;
     }
 }
 
@@ -849,7 +853,6 @@ header.header-area.scrolled {
     margin-top: 25px;
     position: relative;
     padding: 15px 50px;
-    height: 60px;
 }
 
 .site-btn.course:hover {
@@ -1377,7 +1380,7 @@ header.header-area.scrolled {
     width: 100%;
     background: #fff;
     border: none;
-    padding: 15px 10px;
+    padding: 20px 10px 10px 10px;
     margin-top: 12px;
     border-radius: 6px;
     color: #2C2D35;
@@ -1648,7 +1651,7 @@ header.header-area.scrolled {
     z-index: 977;
     padding: 20px;
     transition: .3s;
-    right: -250px;
+    left: -250px;
 }
 
 .sidebarlists ul {
@@ -1747,7 +1750,7 @@ header.header-area.scrolled {
 }
 
 .sidebarlists.actives {
-    right: 0;
+    left: 0;
 }
 
 .overlayed.actives {
@@ -1781,7 +1784,7 @@ header.header-area.scrolled {
 .navigation__icon::before,
 .navigation__icon::after {
     width: 26px;
-    height: 3px;
+    height: 2px;
     background-color: #fff;
     display: inline-block;
 }
@@ -2554,11 +2557,39 @@ section.course-video.course-inner-page .accordion.course .subtitle>a::after {
     margin: 0;
     position: absolute;
     color: #747474;
-    margin-top: 24px;
+    top: 30px;
     left: 11px;
     opacity: 1;
     transition: .2s;
     pointer-events: none;
+}
+
+.loginforms1 .form-group input:active+label, 
+.loginforms1 .form-group input:focus+label,
+.loginforms1 .form-group input:not(:placeholder-shown)+label {
+    top: 16px;
+    font-size: 13px;
+}
+
+.bkash-input-field {
+    position: relative;
+}
+.bkash-input-field label {
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+    color: #747474;
+    top: 18px;
+    left: 20px;
+    opacity: 1;
+    transition: .2s;
+    pointer-events: none;
+}
+.bkash-input-field input:active+label, 
+.bkash-input-field input:focus+label,
+.bkash-input-field input:not(:placeholder-shown)+label {
+    top: 3px;
+    font-size: 13px;
 }
 
 ::placeholder {
@@ -3215,3 +3246,86 @@ section.course-video.course-inner-page .tab-content .single-video-left { padding
 
 
 /* Collapse Sidebar Course in page  */
+@media (min-width: 992px) and (max-width: 119px) {
+    .inner-course, .course-preview-details {
+        height: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    div .header-buttons {
+        margin-top: -46px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 767px){
+    #login-modal-form .login-content .row .col:first-child {
+        display: none;
+    }
+    .login-area.register a.back-btn {
+        right: 20px;
+        z-index: 2;
+    }
+    div .header-buttons {
+        text-align: right;
+        padding-right: 50px;
+    }
+}
+
+
+
+/* Hamburger Menu Icon */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+}
+.menu-btn__burger {
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+.menu-btn__burger::before {
+  transform: translateY(-9px);
+}
+.menu-btn__burger::after {
+  transform: translateY(9px);
+}
+.inner-page .menu-btn__burger,
+.inner-page .menu-btn__burger::before,
+.inner-page .menu-btn__burger::after,
+.scrolled .menu-btn__burger,
+.scrolled .menu-btn__burger::before,
+.scrolled .menu-btn__burger::after {
+    background: #000;
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}

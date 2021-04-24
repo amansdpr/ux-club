@@ -29,6 +29,15 @@
         });
     }
 
+
+    $('.menu-btn').on('click', function(){
+        $(this).toggleClass('open');
+    });
+    $('.overlayed').on('click', function(){
+        $('.menu-btn').removeClass('open');
+    });
+
+
     // addclass & removeclass
     $(".sideicon").on("click", function () {
         $(".overlayed, .sidebarlists").addClass("actives");
