@@ -183,6 +183,7 @@ img {
     font-size: 18px;
     display: block;
     padding: 10px;
+    white-space: nowrap;
 }
 
 .mainmenu ul li:not(:first-child) {
@@ -1643,7 +1644,7 @@ header.header-area.scrolled {
 
 /* sidebar start */
 .sidebarlists {
-    background: #fff;
+    background: #f6f6f6;
     position: fixed;
     top: 0;
     height: 100%;
@@ -1651,7 +1652,7 @@ header.header-area.scrolled {
     z-index: 977;
     padding: 20px;
     transition: .3s;
-    left: -250px;
+    right: -250px;
 }
 
 .sidebarlists ul {
@@ -1675,28 +1676,8 @@ header.header-area.scrolled {
     position: relative;
 }
 
-.sidebarlists ul li a:hover {
-    padding-left: 8px;
-    color: #f37022;
-}
-
-.sidebarlists ul li a::after {
-    transition: all .3s;
-}
-
-.sidebarlists ul li a:hover::after {
-    height: 100%;
-    width: 4px;
-    content: "";
-    background: #F37022;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -5px;
-}
-
 .crossbars {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .crossbars button {
@@ -1713,10 +1694,10 @@ header.header-area.scrolled {
     height: 20px;
 }
 
-.crossbars button::after,
+.crossbars button::after, 
 .crossbars button::before {
-    height: 3px;
-    width: 20px;
+    height: 2px;
+    width: 25px;
     background: #1b2b3a;
     content: "";
     left: 0;
@@ -1750,7 +1731,7 @@ header.header-area.scrolled {
 }
 
 .sidebarlists.actives {
-    left: 0;
+    right: 0;
 }
 
 .overlayed.actives {
@@ -3135,7 +3116,12 @@ body.inner-page {
 
 @media (max-width: 767px){
     .info-box {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        height: 135px;
+        text-align: center;
+        white-space: nowrap;
+        padding: 15px 0px;
     }
     .info-one,
     .user-side-menu {
@@ -3143,6 +3129,26 @@ body.inner-page {
     }
     .user-content {
         margin: 50px auto;
+    }
+}
+
+@media (max-width: 575px){
+    .info-row > div {
+        width: 33%;
+        padding: 0 3px;
+    }
+    .info-box {
+        gap: 7px;
+        height: 125px;
+    }
+    .info-box i, .info-box span {
+        font-size: 30px;
+    }
+    .info-box h3 {
+        font-size: 20px;
+    }
+    .info-box p {
+        font-size: 14px;
     }
 }
 
@@ -3328,4 +3334,101 @@ section.course-video.course-inner-page .tab-content .single-video-left { padding
 }
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media (min-width: 992px){
+    .hidden-pc {
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+    .hidden-mob {
+        display: none;
+    }
+}
+.hamburger-menu h5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.hamburger-menu a {
+    font-family: 'Roboto';
+}
+.hamburger-menu .sub-menu {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 20px;
+}
+.hamburger-menu .sub-menu li {}
+.hamburger-menu .sub-menu li a {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.hamburger-menu .sub-menu li.active a,
+.hamburger-menu .sub-menu li a:hover {
+    color: #e30045;
+}
+.hamburger-menu a.call-button {
+    margin-top: 20px;
+    color: #757575;
+}
+.hamburger-menu a.call-button i {
+    color: #e30045;
+}
+
+
+
+/* User side menu */
+.user-side-menu-panel {
+    top: 74px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    z-index: 800;
+    position: fixed;
+    background: #ececec;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.user-side-menu-panel.active {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.user-side-menu-panel .info-box {
+    border-radius: 0px;
+}
+.user-side-menu-panel .info-box {
+    border-radius: 0px;
+    flex-direction: revert;
+    gap: 15px;
+    text-align: left;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 0;
+}
+.user-side-menu-panel .user-side-menu {
+    border-radius: 0;
+    padding-top: 15px;
+    text-align: left;
+}
+.user-side-menu-panel-overlay  {
+    background: #24384C;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 74px;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.user-side-menu-panel-overlay.active {
+    z-index: 790;
+    visibility: visible;
+    opacity: .5;
 }

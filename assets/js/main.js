@@ -29,14 +29,22 @@
         });
     }
 
-
-    $('.menu-btn').on('click', function(){
+    // Menu Icon click JS
+    var menuBtn = $('.menu-btn');
+    menuBtn.on('click', function(){
         $(this).toggleClass('open');
     });
-    $('.overlayed').on('click', function(){
-        $('.menu-btn').removeClass('open');
-    });
 
+    // User Menu
+    var userSideMenu = $('#user-side-menu-toggle');
+    userSideMenu.on('click', function(e){
+        e.preventDefault();
+        $('.user-side-menu-panel-overlay, .user-side-menu-panel').toggleClass('active');
+    });
+    $('.user-side-menu-panel-overlay').on('click', function(e){
+        e.preventDefault();
+        $('.user-side-menu-panel-overlay, .user-side-menu-panel').toggleClass('active');
+    });
 
     // addclass & removeclass
     $(".sideicon").on("click", function () {
@@ -45,6 +53,7 @@
 
     $(".overlayed, .crossbars").on("click", function () {
         $(".sidebarlists, .overlayed").removeClass("actives");
+        menuBtn.removeClass('open');
     });
 
     $(".rocket-by a.bkashh1").on("click", function () {

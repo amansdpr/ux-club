@@ -148,29 +148,85 @@
                             </ul>
                         </div>
                         <div class="sideicon">
-                            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-                            <label for="navi-toggle" class="navigation__button">
-                                <span class="navigation__icon">&nbsp;</span>
-                            </label>
+                            <div class="menu-btn">
+                                <div class="menu-btn__burger"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 my-auto">
+
+                    <!-- After Login header button section start -->
                     <div class="header-buttons">
-                        <a href="#" class="site-button" data-toggle="modal" data-target="#login-modal-form">Log in</a>
-                        <a href="singup.html" class="site-button borderd">Join now</a>
+
+                        <a href="https://www.uxclub.com.bd/dashboard" class="site-button borderd hidden-mob"><i class="icon-user mr-1"></i> My Panel</a>
+
+                        <!-- for mobile button -->
+                        <a href="" class="site-button borderd hidden-pc" id="user-side-menu-toggle"><i class="icon-user mr-1"></i> My Panel</a>
+
+                        <!-- user Side Menu -->
+                        <div class="user-side-menu-panel-overlay"></div>
+                        <div class="user-side-menu-panel">
+                            <div class="sidebar">
+                                <div class="info-box info-one">
+                                    <img src="assets/images/avatar.png" alt="">
+                                    <div>
+                                        <h4>Al Amin Hossain</h4>
+                                        <p><a href="email:student@demo.com" class="email">student@demo.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav flex-column nav-pills user-side-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="active" href="#v-pills-home"><span class="icon-sidebar_dashboard"></span> Dashboard</a>
+                                <a href="#v-pills-profile"><span class="icon-sidebar_mycourse"></span>  My Course</a>
+                                <a href="#v-pills-messages"><span class="icon-sidebar_message"></span>  Message</a>
+                                <a href="#v-pills-info"><span class="icon-sidebar_info"></span>  Purchase info</a>
+                                <a href="#v-pills-settings"><span class="icon-sidebar_settings"></span>  Settings</a>
+                                <a href="#" ><span class="icon-sidebar_signout"></span> Sign Out</a>
+                            </div>
+                        </div>
+
                     </div>
+                    <!-- After login header button section end -->
+
                 </div>
             </div>
         </div>
     </header>
     <!-- header area end -->
 
+    <!-- hamburger menu start -->
+    <div class="hamburger-menu">
+        <div class="sidebarlists">
+            <div class="crossbars">
+                <button></button>
+            </div>
+            <h5>Learn <i class="fa fa-caret-down"></i></h5>
+            <ul class="sub-menu">
+                <li class="active"><a href="#">Graphic Design</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Mobile App Design</a></li>
+                <li><a href="#">UI Design</a></li>
+                <li><a href="#">Executive Design</a></li>
+            </ul>
+            <ul>
+                <li><a href="inner-page-after.html">Our Projects</a></li>
+                <li><a href="about.html">About UX Club</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="tel:01743196240" class="call-button"><span><i class="icofont-headphone-alt"></i></span> 01743 196 240</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- hamburger menu end -->
+
+
+
     <section class="user-dashboard py-4">
         <div class="container">
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
+            <div class="row info-row">
+
+                <div class="col-lg-3 col-md-4 hidden-mob">
                     <div class="sidebar">
                         <div class="info-box info-one">
                             <img src="assets/images/avatar.png" alt="">
@@ -181,8 +237,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4 col-sm-4">
                     <div class="info-box info-two">
                         <span class="icon-user"></span>
                         <div>
@@ -191,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4 col-sm-4">
                     <div class="info-box info-three">
                         <span class="icon-heart"></span>
                         <div>
@@ -200,7 +255,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-4 col-sm-4">
                     <div class="info-box info-four">
                         <span class="icon-bell"></span>
                         <div>
@@ -209,10 +264,11 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-3 hidden-mob">
                     <div class="nav flex-column nav-pills user-side-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="icon-sidebar_dashboard"></span> Dashboard</a>
                         <a class="" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="icon-sidebar_mycourse"></span>  My Course</a>
@@ -222,7 +278,7 @@
                         <a href="#" ><span class="icon-sidebar_signout"></span> Sign Out</a>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-6 col-sm-12">
+                <div class="col-lg-9">
                     <div class="tab-content" id="v-pills-tabContent">
 
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
