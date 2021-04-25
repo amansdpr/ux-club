@@ -3352,6 +3352,7 @@ section.course-video.course-inner-page .tab-content .single-video-left { padding
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 .hamburger-menu a {
     font-family: 'Roboto';
