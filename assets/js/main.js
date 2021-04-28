@@ -46,6 +46,12 @@
         $('.user-side-menu-panel-overlay, .user-side-menu-panel').toggleClass('active');
     });
 
+
+    // $('.hamburger-menu h5').on('click', function(e){
+    //     e.preventDefault();
+    //     $('.hamburger-menu ul.sub-menu').slideToggle();
+    // });
+
     // addclass & removeclass
     $(".sideicon").on("click", function () {
         $(".overlayed, .sidebarlists").addClass("actives");
