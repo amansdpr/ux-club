@@ -2559,6 +2559,8 @@ section.course-video.course-inner-page .accordion.course .subtitle>a::after {
 .submit-btn {
     margin-top: 20px;
     font-weight: 600;
+    border: none;
+    width: 100%;
 }
 
 .submit-btn:hover {
